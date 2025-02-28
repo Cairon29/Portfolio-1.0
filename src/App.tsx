@@ -1,9 +1,15 @@
-import './App.css'
+import { NavBar } from './components/navBar/NavBar'
+import { Home } from './pages/home/Home'
+import './index.css'
 
 function App() {
-
   return (
-      <h1> Here an in comming portfolio</h1>
+    <>
+      <NavBar />
+      <div id='app-container'>
+        <Home/>
+      </div>
+    </>
   )
 }
 
