@@ -1,0 +1,19 @@
+#header-home {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    padding: 32px;
+
+    border: 1px solid rgb(89, 89, 239);
+
+    & div {
+        width: 40%;
+    }
+
+    & img {
+        width: 30vh;
+        border-radius: 50%;
+    }
+}

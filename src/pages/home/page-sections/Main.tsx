@@ -1,6 +1,6 @@
 export const Main = () => {
     return (
-        <main id="main">
+        <main id="main-home">
             Main
         </main>
     )
