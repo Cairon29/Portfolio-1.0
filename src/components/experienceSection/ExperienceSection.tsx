@@ -7,9 +7,6 @@ export const ExperienceSection = () => {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <ExperienceCard/>
       <ExperienceCard/>
 
     </section>
