@@ -5,21 +5,29 @@ body {
     padding: 0;
     font-family: "Montserrat", serif;
 }
-#root {
+#app-container {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr);
+    grid-template-columns: 0.3fr 1fr 0.3fr;
     grid-template-rows: auto auto auto; 
     gap: 1em;
     grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    ".      header ."
+    ".      main   ."
+    "footer footer footer";
 }
 
-#header {
+header {
     grid-area: header;
 }
 
-#main {
+main {
     grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+h1 {
+    font-size: 44px;
 }

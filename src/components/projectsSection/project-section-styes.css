@@ -1,0 +1,10 @@
+#projects-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-card-article  {
+    display: flex;
+    justify-content: space-around;
+}
