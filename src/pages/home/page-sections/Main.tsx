@@ -1,10 +1,11 @@
-import { GithubActivity } from "../../../components/githubActivity/GithubActivity"
+import { ExperienceSection } from "../../../components/experienceSection/ExperienceSection"
+import { ProjectsSection } from "../../../components/projectsSection/ProjectsSection"
 
 export const Main = () => {
     return (
         <main id="main-home">
-            here contact info   
-            <GithubActivity/>
+            <ExperienceSection/>
+            <ProjectsSection/>
         </main>
     )
 }

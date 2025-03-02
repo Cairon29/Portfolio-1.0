@@ -7,7 +7,7 @@ body {
 }
 #app-container {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
     grid-template-rows: auto auto auto; 
     gap: 1em;
     grid-template-areas: 
@@ -22,4 +22,12 @@ header {
 
 main {
     grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+h1 {
+    font-size: 44px;
 }
