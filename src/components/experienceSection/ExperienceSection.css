@@ -1,0 +1,22 @@
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+#experience-section {
+    /* border: 1px solid rgb(89, 89, 239); */
+    
+}
+
+.experience-card {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.experience-information {
+    width: 70%;
+}
