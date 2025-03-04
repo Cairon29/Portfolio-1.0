@@ -19,7 +19,6 @@ export const ExperienceCard = () => {
                     </p>
                 </section>
             </article>
-        <hr />
     </>
     
   )

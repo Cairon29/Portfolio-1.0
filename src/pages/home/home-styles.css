@@ -1,3 +1,9 @@
+#main-home {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
 #header-home {
     height: 80vh;
     width: 100%;
