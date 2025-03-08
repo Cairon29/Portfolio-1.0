@@ -8,17 +8,19 @@ import '../home-styles.css'
 export const Header = () => {
   return (
     <header id='header-home'>
-      <div>
-        <h1>I'm David Jitomate</h1>
-        <p>I'm a bilingual Junior software developer looking to collaborate with professional teams to <b>maintain</b>, <b>enhance</b>, and <b>create</b> code.</p>
-        <section id="contact-icons-sections">
-          <FaLinkedinIn/>
-          <TbBrandGithubFilled/>
-          <MdEmail/>
-          <IoDocumentText/>
-        </section>
-      </div>
-      <img src="./src/assets/nishinoya-profile-photo.png" alt="Profile photo"/>
+      <section id="header-content">
+        <div id="header-text">
+          <h1>I'm David Jitomate</h1>
+          <p>Bilingual Junior software developer looking to collaborate with professional teams to <b>maintain</b>, <b>enhance</b>, and <b>create</b> code.</p>
+          <section id="contact-icons-sections">
+            <FaLinkedinIn/>
+            <TbBrandGithubFilled/>
+            <MdEmail/>
+            <IoDocumentText/>
+          </section>
+        </div>
+        <img src="./src/assets/nishinoya-profile-photo.png" alt="Profile photo"/>
+      </section>
     </header>
   )
 }

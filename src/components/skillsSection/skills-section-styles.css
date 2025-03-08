@@ -11,6 +11,10 @@
     justify-content: center;
     gap: 35px;
 }
+
+.skills-article {
+    width: 100%;
+}
 .skill-icons {
     width: 100%;
     display: flex;

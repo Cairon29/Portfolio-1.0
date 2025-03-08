@@ -1,13 +1,13 @@
 #nav {
-    padding: 15px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: sticky;
+    top: 0;
     justify-content: space-around;
-
 }
 
 .nav-container {
-    width: 100px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -20,10 +20,27 @@
 
 #nav-bar-menu {
     padding: 0;
-    width: 100%;
     list-style: none;
     text-decoration: none;
     display: flex;
     gap: 20px;
 }
 
+@media screen and (max-width: 520px) {
+    #nav {
+        gap: 10px;
+    }
+    
+    .nav-container:nth-child(1) {
+        order: 1; 
+    }
+    
+    .nav-container:nth-child(2) {
+        order: 3; 
+    }
+    
+    .nav-container:nth-child(3) {
+        order: 2; 
+    }
+
+}

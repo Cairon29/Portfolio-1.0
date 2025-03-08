@@ -1,11 +1,11 @@
 import { NavBar } from './components/navBar/NavBar'
 import { Home } from './pages/home/Home'
-import './index.css'
 
 function App() {
+
   return (
     <>
-      <NavBar />
+      <NavBar/>
       <div id='app-container'>
         <Home/>
       </div>

@@ -1,8 +1,8 @@
-import { ContactMeSection } from "../../../components/contactMeSection/ContactMeSection"
-import { EducationSecition } from "../../../components/educationSecition/EducationSecition"
 import { ExperienceSection } from "../../../components/experienceSection/ExperienceSection"
 import { ProjectsSection } from "../../../components/projectsSection/ProjectsSection"
+import { EducationSecition } from "../../../components/educationSecition/EducationSecition"
 import { SkillsSection } from "../../../components/skillsSection/SkillsSection"
+import { ContactMeSection } from "../../../components/contactMeSection/ContactMeSection"
 
 export const Main = () => {
     return (

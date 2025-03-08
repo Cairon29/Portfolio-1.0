@@ -9,7 +9,7 @@ export const NavBar = () => {
                 <AiFillCode/>
                 <span>Jito</span>
             </section>
-            <section>
+            <section className="nav-container">
                 <ul id="nav-bar-menu">
                     <li>Home</li>
                     <li>Projects</li>
