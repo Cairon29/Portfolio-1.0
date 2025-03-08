@@ -1,6 +1,6 @@
 #education-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .5fr .5fr;
     gap: 20px;
 }
 
@@ -16,5 +16,11 @@
 
     & h4 {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #education-section {
+        grid-template-columns: 1fr;
     }
 }
