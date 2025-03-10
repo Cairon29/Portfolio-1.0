@@ -1,28 +1,122 @@
-#root {
-    padding: 20px;
-}
+
 
 body {
     width: 100%;
-    color: aliceblue;
-    background-color: #0b121e;
+    color: rgb(255, 255, 255);
+    background-color: #1a1a1a;
     margin: 0;
     padding: 0;
     font-family: "Montserrat", serif;
+
+    & ::-moz-selection {
+        color: white;
+        background-color: #ff7273;
+    }
 }
 
 h1 {
     font-size: 44px;
+    color: transparent;
+    background: linear-gradient(54deg, rgba(91,246,113,1) 20%, rgba(254,255,209,1) 50%, rgba(255,114,115,1) 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 h2 {
     font-size: 32px;
     margin-top: 0;
     margin-bottom: 50px;
+    color: #ff7273;
+}
+
+h3 {
+    color: #ff7273;
+}
+
+h4 {
+    color: #eda2a7;
+}
+
+p {
+    font-size: 18px;
+}
+
+b {
+    color: #ffb8bd;
+}
+
+svg {
+    fill: #70E08C;
+}
+
+label {
+    color: #ffb8bd;
+}
+
+span {
+    font-weight: bold;
+}
+
+.project-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    & svg {
+        width: 22px;
+        height: 22px;
+    }
+}  
+button  {
+    width: 100px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border-style: none;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    background-color: #1a1a1a;
+    color: #70E08C;
+    transition: all .3s ease;
 
 }
 
+button::before, button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15px;
+    padding: 2px;
+    transition: all .3s ease;
+    background-color: #575757;
+
+}
+
+button:hover {
+    color: #c6ffd4;
+}
+
+button:hover::after {
+    background-color: #70E08C;
+    opacity: .7;
+}
+
+button:hover::before {
+    background-color: #70E08C;
+    opacity: .7;
+    filter: blur(5px);
+}
+
 #app-container {
+    padding: 0px 20px 20px 20px;
     display: grid;
     grid-template-columns: auto 0.6fr auto;
     grid-template-rows: auto auto auto;
@@ -31,6 +125,16 @@ h2 {
     ".      header   ."
     ".      main     ."
     "footer footer footer";
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
 }
 
 @media screen and (max-width: 650px) {

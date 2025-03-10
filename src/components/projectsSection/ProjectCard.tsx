@@ -11,10 +11,13 @@ export const ProjectCard = ({ imgSrc, projectTitle, projectDescription }: Projec
     <article className="project-card-article">
       <picture className="project-img-container" style={{backgroundImage: `url(${imgSrc})`}}></picture>
       <div className="project-card-info">
-        <section className="project-title-section">
-          <h3>{projectTitle}</h3> 
-          <HiOutlineExternalLink />
-        </section>
+        <a href="https://rick-and-morty-wiki-orcin.vercel.app" target="__blank" className="project-title-section">
+          <div className="project-title-div">
+            <h3>{projectTitle}</h3> 
+            <HiOutlineExternalLink />
+          </div>
+          <hr />
+        </a>
         <p>{projectDescription}</p>
 
         <div className="project-card-buttons">
