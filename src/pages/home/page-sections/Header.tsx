@@ -14,16 +14,24 @@ export const Header = () => {
           <p>Bilingual Junior software developer looking to collaborate with professional teams to <b>maintain</b>, <b>enhance</b>, and <b>create</b> code.</p>
           <section id="contact-icons-sections">
             <a icon-description="LinkedIn" href="https://www.linkedin.com/in/jose-david-junco-4540811b1/" target="_blank" rel="noreferrer">
-              <FaLinkedinIn/>
+              <div className="icon-container">
+                <FaLinkedinIn/>
+              </div>
             </a>
-            <a icon-description="Github" href="https://github.com/Cairon29" target="_blank" rel="noreferrer">
-              <TbBrandGithubFilled/>
+            <a icon-description="Github" href="https://github.com/Cairon29" target="_parent" rel="noreferrer">
+              <div className="icon-container">
+                <TbBrandGithubFilled/>
+              </div>
             </a>
             <a icon-description="Copy Email" href="">
-              <MdEmail/>
+              <div className="icon-container">
+                <MdEmail/>
+              </div>
             </a>
             <a icon-description="Download CV" href="">
-              <IoDocumentText/>
+              <div className="icon-container">
+                <IoDocumentText/>
+              </div>
             </a>
           </section>
         </div>

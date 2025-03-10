@@ -30,8 +30,7 @@ h2 {
 }
 
 h3 {
-    color: #70E0CB;
-    
+    color: #ff7273;
 }
 
 h4 {
@@ -50,10 +49,70 @@ svg {
     fill: #70E08C;
 }
 
-
+label {
+    color: #ffb8bd;
+}
 
 span {
     font-weight: bold;
+}
+
+.project-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    & svg {
+        width: 22px;
+        height: 22px;
+    }
+}  
+button  {
+    width: 100px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border-style: none;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    background-color: #1a1a1a;
+    color: #70E08C;
+    transition: all .3s ease;
+
+}
+
+button::before, button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15px;
+    padding: 2px;
+    transition: all .3s ease;
+    background-color: #575757;
+
+}
+
+button:hover {
+    color: #c6ffd4;
+}
+
+button:hover::after {
+    background-color: #70E08C;
+    opacity: .7;
+}
+
+button:hover::before {
+    background-color: #70E08C;
+    opacity: .7;
+    filter: blur(5px);
 }
 
 #app-container {
@@ -66,6 +125,16 @@ span {
     ".      header   ."
     ".      main     ."
     "footer footer footer";
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
 }
 
 @media screen and (max-width: 650px) {

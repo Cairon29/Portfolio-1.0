@@ -11,9 +11,9 @@ export const NavBar = () => {
             </a>
             <section className="nav-container-menu">
                 <ul id="nav-bar-menu">
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#projects-title">Projects</a></li>
+                    <li><a href="#contact-me-section">Contact</a></li>
                     <li>About</li>
                 </ul>
             </section>

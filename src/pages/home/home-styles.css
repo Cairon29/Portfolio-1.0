@@ -38,6 +38,10 @@
         word-wrap: normal;
     }
 
+    & b {
+        color: #70E08C;
+
+    }
 }
 
 #contact-icons-sections {
@@ -46,64 +50,65 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    & a {
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        transition: all .3s ease;
+        z-index: 3;
+    }
+
+
     & svg {
-        box-sizing: border-box;
+        transition: all .3s ease;
         width: 34px;
         height: 34px;
-    }
-
-    & :nth-child(2) {
-        width: 36px;
-        height: 36px;
-    }
-
-    & :nth-child(3) {
-        width: 40px;
-        height: 40px;
+        fill: #858585;
+        z-index: 1;
     }
 }
 
-
-
-#contact-icons-sections a {
-    transition: all .2s ease;
+.icon-container {
+    background-color: #1a1a1a;
+    border-radius: 15%; 
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    background-color: #1a1a1a;
 }
 
+.icon-container::before, .icon-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15%; 
+    padding: 2px;
+    transition: all .3s ease;
+}
 #contact-icons-sections a:hover {
-    transform: scale(1.2);
-
     & svg {
         fill: #c6ffd4;
     }
-
-    
 }
 
-#contact-icons-sections a::before {
-    font-size: 14px;
-    font-weight: bolder;
-    padding: 5px; 
-    border-radius: 10px;
+
+
+#contact-icons-sections a div:hover::after {
     background-color: #70E08C;
-    width: max-content;
-    
-    content: attr(icon-description);
-    position: absolute;
-    color: rgb(0, 0, 0);
-    z-index: 1;
-    opacity: 0;
-    transform: translateY(0px) rotate(10deg);
-    transition: all .2s ease-in-out;
+    opacity: .7;
 }
 
-#contact-icons-sections a:hover::before {
-    opacity: 1;
-    transform: translateY(35px) rotate(0deg);
+#contact-icons-sections a div:hover::before {
+    background-color: #70E08C;
+    opacity: .7;
+    filter: blur(5px);
 }
 
 @keyframes fade-in-to-right {
