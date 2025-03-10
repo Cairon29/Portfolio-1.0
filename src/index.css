@@ -1,28 +1,63 @@
-#root {
-    padding: 20px;
-}
+
 
 body {
     width: 100%;
-    color: aliceblue;
-    background-color: #0b121e;
+    color: rgb(255, 255, 255);
+    background-color: #1a1a1a;
     margin: 0;
     padding: 0;
     font-family: "Montserrat", serif;
+
+    & ::-moz-selection {
+        color: white;
+        background-color: #ff7273;
+    }
 }
 
 h1 {
     font-size: 44px;
+    color: transparent;
+    background: linear-gradient(54deg, rgba(91,246,113,1) 20%, rgba(254,255,209,1) 50%, rgba(255,114,115,1) 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 h2 {
     font-size: 32px;
     margin-top: 0;
     margin-bottom: 50px;
+    color: #ff7273;
+}
 
+h3 {
+    color: #70E0CB;
+    
+}
+
+h4 {
+    color: #eda2a7;
+}
+
+p {
+    font-size: 18px;
+}
+
+b {
+    color: #ffb8bd;
+}
+
+svg {
+    fill: #70E08C;
+}
+
+
+
+span {
+    font-weight: bold;
 }
 
 #app-container {
+    padding: 0px 20px 20px 20px;
     display: grid;
     grid-template-columns: auto 0.6fr auto;
     grid-template-rows: auto auto auto;

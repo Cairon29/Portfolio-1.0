@@ -1,10 +1,21 @@
 #nav {
+    padding: 10px;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
     justify-content: space-around;
+
+    animation: progressive-fade linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+
+    & a {
+        text-decoration: none;
+        
+    }
 }
 
 .nav-container {
@@ -12,10 +23,41 @@
     justify-content: center;
     gap: 10px;
     align-items: center;
+    transition: all .3s ease;
     & svg {
         width: 30px;
         height: 30px;
+    transition: all .3s ease;
+
     }
+
+    & span {
+        font-size: 20px;
+        color: #70E08C;
+    transition: all .3s ease;
+
+    }
+    
+}
+
+.nav-container:hover {
+    scale: 1.1;
+    cursor: pointer;
+
+    & span {
+        color: #ff7273;
+    }
+
+    & svg {
+        fill: #ff7273;
+    }
+}
+
+.nav-container-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
 }
 
 #nav-bar-menu {
@@ -24,6 +66,15 @@
     text-decoration: none;
     display: flex;
     gap: 20px;
+    font-weight: bold;
+}
+
+@keyframes progressive-fade {
+    to {
+        background-color: #d2d2d21a;
+        backdrop-filter: blur(10px);
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -44,3 +95,4 @@
     }
 
 }
+

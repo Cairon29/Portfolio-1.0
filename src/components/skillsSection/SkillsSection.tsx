@@ -29,7 +29,7 @@ export const SkillsSection = () => {
         <h2 id='skills-title'>Skills</h2>
         <section id='skills-section'>
             <article className='skills-article'>
-                <h3>Technologies</h3>
+                <h4>Technologies</h4>
                 <div className="skill-icons">
                     <span><BiLogoTypescript id="type-script-logo"/> Typescript</span>
                     <span><FaJsSquare/>Javascript</span>
@@ -44,7 +44,7 @@ export const SkillsSection = () => {
             </article>
 
             <article className='skills-article'>
-                <h3>Tools</h3>
+                <h4>Tools</h4>
                 <div className="skill-icons">
                     <span><VscGithub/> Github</span>
                     <span><FaGitSquare/> Git</span>
@@ -55,7 +55,7 @@ export const SkillsSection = () => {
                 </div>
             </article>
             <article className='skills-article'>
-                <h3>Learning</h3>
+                <h4>Learning</h4>
                 <div className="skill-icons">
                     <span><SiTailwindcss/> Tailwind CSS</span>
                     <span><SiJest/> Jest</span>

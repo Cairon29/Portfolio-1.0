@@ -5,11 +5,11 @@ import './nav-bar-styles.css'
 export const NavBar = () => {
     return (
         <nav id="nav">
-            <section className="nav-container">
-                <AiFillCode/>
+            <a href="#" className="nav-container">
+                <AiFillCode className="nav-svg"/>
                 <span>Jito</span>
-            </section>
-            <section className="nav-container">
+            </a>
+            <section className="nav-container-menu">
                 <ul id="nav-bar-menu">
                     <li>Home</li>
                     <li>Projects</li>
@@ -17,9 +17,9 @@ export const NavBar = () => {
                     <li>About</li>
                 </ul>
             </section>
-            <section className="nav-container">
-                <VscGithub/>
-            </section>
+            <a href="https://github.com/Cairon29" target="_blank" className="nav-container">
+                <VscGithub className="nav-svg"/>
+            </a>
         </nav>
     )
 }

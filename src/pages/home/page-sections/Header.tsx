@@ -13,10 +13,18 @@ export const Header = () => {
           <h1>I'm David Jitomate</h1>
           <p>Bilingual Junior software developer looking to collaborate with professional teams to <b>maintain</b>, <b>enhance</b>, and <b>create</b> code.</p>
           <section id="contact-icons-sections">
-            <FaLinkedinIn/>
-            <TbBrandGithubFilled/>
-            <MdEmail/>
-            <IoDocumentText/>
+            <a icon-description="LinkedIn" href="https://www.linkedin.com/in/jose-david-junco-4540811b1/" target="_blank" rel="noreferrer">
+              <FaLinkedinIn/>
+            </a>
+            <a icon-description="Github" href="https://github.com/Cairon29" target="_blank" rel="noreferrer">
+              <TbBrandGithubFilled/>
+            </a>
+            <a icon-description="Copy Email" href="">
+              <MdEmail/>
+            </a>
+            <a icon-description="Download CV" href="">
+              <IoDocumentText/>
+            </a>
           </section>
         </div>
         <img src="./src/assets/nishinoya-profile-photo.png" alt="Profile photo"/>

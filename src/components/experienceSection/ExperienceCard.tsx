@@ -6,8 +6,8 @@ export const ExperienceCard = () => {
                     <h3>FreeLancer</h3>
                     <h4>Full-stack-developer</h4>
                 </div>
-                <div>
-                    <p>2020 - 2023</p>
+                <div className="experience-date">
+                    <span>2020 - 2023</span>
                 </div>
             </section>  
             <section className="experience-description">
