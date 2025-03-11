@@ -18,7 +18,7 @@ export const Header = () => {
                 <FaLinkedinIn/>
               </div>
             </a>
-            <a icon-description="Github" href="https://github.com/Cairon29" target="_parent" rel="noreferrer">
+            <a icon-description="Github" href="https://github.com/Cairon29" target="_blank" rel="noreferrer">
               <div className="icon-container">
                 <TbBrandGithubFilled/>
               </div>
@@ -28,7 +28,7 @@ export const Header = () => {
                 <MdEmail/>
               </div>
             </a>
-            <a icon-description="Download CV" href="">
+            <a icon-description="Download CV" href="src\pages\pdfViewer.html" target="_blank" rel="noreferrer">
               <div className="icon-container">
                 <IoDocumentText/>
               </div>
