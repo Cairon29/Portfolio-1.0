@@ -35,7 +35,7 @@ export const Header = () => {
             </a>
           </section>
         </div>
-        <img src="./src/assets/nishinoya-profile-photo.png" alt="Profile photo"/>
+        <img src="./src/assets/nishinoya-profile-photo.png" alt="Profile photo" id="profile-photo"/>
       </section>
     </header>
   )

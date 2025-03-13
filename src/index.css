@@ -37,12 +37,34 @@ h4 {
     color: #eda2a7;
 }
 
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
 p {
     font-size: 18px;
 }
 
 b {
     color: #ffb8bd;
+    transition: 200ms ease-in;
+}
+
+b:hover {
+    color: #70E08C;
 }
 
 svg {
@@ -55,6 +77,22 @@ label {
 
 span {
     font-weight: bold;
+}
+
+#profile-photo {
+    width: 250px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fade-in-to-left 1s cubic-bezier(0, 0.21, 0.46, 0.99) both;
+    animation-delay: 500ms;
+    z-index: -1;
+}
+
+.appearing-title {
+    animation: 
+    fade-in-upwards 1s cubic-bezier(0, 0.21, 0.46, 0.99) both,
+    move-upwards-and-downwards 1s linear alternate infinite both;
+    animation-delay: 750ms;
 }
 
 .project-title-section {
@@ -127,14 +165,57 @@ button:hover::before {
     "footer footer footer";
 }
 
+@keyframes fade-in-upwards {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
 
-a {
-    text-decoration: none;
-    color: inherit;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
 }
 
-a:visited {
-    color: inherit;
+@keyframes fade-in-to-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-to-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes move-upwards-and-downwards {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+    
 }
 
 @media screen and (max-width: 650px) {

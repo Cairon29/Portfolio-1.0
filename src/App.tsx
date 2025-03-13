@@ -1,15 +1,8 @@
-import { NavBar } from './components/navBar/NavBar'
-import { Home } from './pages/home/Home'
+import { AppRouter } from "./router/AppRouter"
 
 function App() {
-
   return (
-    <>
-      <NavBar/>
-      <div id='app-container'>
-        <Home/>
-      </div>
-    </>
+    <AppRouter/>
   )
 }
 
