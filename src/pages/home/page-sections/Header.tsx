@@ -1,13 +1,28 @@
+import { ToastContainer, toast, Bounce } from 'react-toastify';
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { IoDocumentText } from "react-icons/io5";
-
 import '../home-styles.css'
 
 export const Header = () => {
+  const copyEmail = () => {
+    navigator.clipboard.writeText('josewjjunco@gmail.com')
+    toast.success('Email copied!', {
+      position: "bottom-right",
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+    });
+  }
   return (
     <header id='header-home'>
+      <ToastContainer/>
       <section id="header-content">
         <div id="header-text">
           <h1>I'm David Jitomate</h1>
@@ -23,12 +38,12 @@ export const Header = () => {
                 <TbBrandGithubFilled/>
               </div>
             </a>
-            <a icon-description="Copy Email" href="">
+            <a icon-description="Copy Email" onClick={copyEmail}>
               <div className="icon-container">
                 <MdEmail/>
               </div>
             </a>
-            <a icon-description="Download CV" href="src\pages\pdfViewer.html" target="_blank" rel="noreferrer">
+            <a icon-description="Download CV" href="pdfViewer.html" target="_blank" rel="noreferrer">
               <div className="icon-container">
                 <IoDocumentText/>
               </div>
