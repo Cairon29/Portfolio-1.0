@@ -43,7 +43,7 @@ export const Header = () => {
                 <MdEmail/>
               </div>
             </a>
-            <a icon-description="Download CV" href="src\pages\pdfViewer.html" target="_blank" rel="noreferrer">
+            <a icon-description="Download CV" href="pdfViewer.html" target="_blank" rel="noreferrer">
               <div className="icon-container">
                 <IoDocumentText/>
               </div>

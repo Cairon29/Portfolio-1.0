@@ -131,5 +131,10 @@
         position: absolute;
         opacity: 0;
     }
+
+    #nav-bar-menu {
+        padding: 7px;
+        margin: 0;
+    }
 }
 
