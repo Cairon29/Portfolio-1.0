@@ -103,17 +103,33 @@
         gap: 10px;
     }
     
-    .nav-container:nth-child(1) {
+    #nav-bar-menu:nth-child(1) {
         order: 1; 
     }
     
-    .nav-container:nth-child(2) {
+    #nav-bar-menu:nth-child(2) {
         order: 3; 
     }
     
-    .nav-container:nth-child(3) {
+    #nav-bar-menu:nth-child(3) {
         order: 2; 
     }
 
+    /* Make the navbar desapear less useful buttoms to adjust the phone size */
+
+    #nav-bar-menu li:nth-child(1) {
+        position: absolute;
+        opacity: 0;
+    }
+
+    #nav-bar-menu li:nth-child(2) {
+        position: absolute;
+        opacity: 0;
+    }
+
+    #nav-bar-menu li:nth-child(3) {
+        position: absolute;
+        opacity: 0;
+    }
 }
 
