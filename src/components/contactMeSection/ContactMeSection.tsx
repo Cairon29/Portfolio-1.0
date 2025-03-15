@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ContactMeSectionStructure } from "./ContactMeSectionStructure"
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast, Bounce } from 'react-toastify';
 
 export const ContactMeSection = () => {
   interface EmailData {
@@ -41,6 +42,17 @@ export const ContactMeSection = () => {
           subject: "",
           message: ""
         })
+        toast.success('Email Sent', {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce
+        });
       }
       
     }
@@ -48,6 +60,7 @@ export const ContactMeSection = () => {
 
   return (
     <>
+      <ToastContainer/>
       <ContactMeSectionStructure
         propsValues={emailData}
         propsFunctions={hdlEmailData}
