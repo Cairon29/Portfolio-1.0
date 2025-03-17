@@ -114,4 +114,8 @@
             width: auto;
         }
     }
+
+    #header-about img {
+        width: 170px;
+    }
 }
