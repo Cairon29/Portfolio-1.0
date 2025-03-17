@@ -27,6 +27,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 50px;
     color: #ff7273;
+    
 }
 
 h3 {
@@ -91,7 +92,7 @@ span {
 .appearing-title {
     animation: 
     fade-in-upwards 1s cubic-bezier(0, 0.21, 0.46, 0.99) both,
-    move-upwards-and-downwards 1s linear alternate infinite both;
+    move-upwards-and-downwards 1.5s linear alternate infinite both;
     animation-delay: 750ms;
 }
 
@@ -225,5 +226,14 @@ button:hover::before {
         "header"
         "main"
         "footer";
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h2 {
+        animation:
+           fade-in-upwards 1s cubic-bezier(0, 0.21, 0.46, 0.99) both,
+            move-upwards-and-downwards 1.5s linear alternate infinite both;
+        animation-delay: 750ms;
     }
 }

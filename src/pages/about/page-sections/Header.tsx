@@ -9,7 +9,7 @@ export const Header = () => {
                 <p><b>Phone:</b> 316-042-9080</p>
             </article>
             <div>
-                <img src="/nishinoya-profile-photo.png" alt="Profile photo" id="profile-photo"/>
+                <img src="/nishinoya-profile-photo.jpg" alt="Profile photo" id="profile-photo"/>
             </div>
         </section>
     </header>

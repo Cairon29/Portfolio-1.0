@@ -50,7 +50,7 @@ export const Header = () => {
             </a>
           </section>
         </div>
-        <img src="/nishinoya-profile-photo.png" alt="Profile photo" id="profile-photo"/>
+        <img src="/nishinoya-profile-photo.jpg" alt="Profile photo" id="profile-photo"/>
       </section>
     </header>
   )
